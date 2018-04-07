@@ -22,8 +22,8 @@ def sc_call(alias_info, operation, args):
     \ntryes to resolve alias_info and pass call to resolved smartcontract
     \nin case of sub_nas support alias_info is array [alias, sub_nas]
     """
-    four = 4 # this is interesting, contract fails if [acc_alias, 4]
-    query_args = [alias_info, four]
+    two = 2 # this is interesting, contract fails if [acc_alias, 4]
+    query_args = [alias_info, two]
     sc = na_call("na_query",query_args)
     if sc:
         return DynamicAppCall(sc, operation, args)
@@ -111,14 +111,14 @@ def dynamic_NEP5_call(operation, args):
     nargs = len(args)
     alias = args[0]
     args = list_slice(args, 1, nargs)
-    #return sc_call(alias,operation,args)
+    return sc_call(alias,operation,args)
 
 def NEP5_call(operation, args):
     """
     :param operation:
     :param args [...]:
     \nhandles 2 scenarios based on parameters call:
-    \n - returns values for NAC token, if standard parameter count
+    \n - returns values for NAT token, if standard parameter count
     \n - passes NEP5 call to other asset based on added parameter(args[0]) [alias_name, sub_nas] 
     """
     nargs = len(args)

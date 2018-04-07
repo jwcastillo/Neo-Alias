@@ -3,7 +3,7 @@
 !!! All snippets are moved to automated testing in tests\tests_to_run.py and tests\test_to_run_smart_NEP5.py !!!
 *In automated testing you can find all these snippets and more. I left this snippets here in case you want to see how to call test NA manually.*
 
-You can run tests with command: 'python -m unittest discover ./tests'
+You can run tests with command: 'python -m unittest discover ./tests' or run script 'run_tests.py'
 
 Hint: 
 *   These snippets were used for testing without sub_nas support, for sub_nas testing change False value to True, since you will need DynamicAppCall. In gateway/na.py set sub_nas to True. (SUPPORT_SUB_NAS in nas/common/constants doesnt work, in case it is imported to gateway/na.py, the dapp stops working properly)
@@ -44,7 +44,7 @@ load_run ..\NA\NASC.avm test 0710 05 True False na_delete ["asdhasdy",2]
 -   retuns 1 --> deletes alias
 
 load_run ..\NA\NASC.avm test 0710 05 True False na_offer_sell ["asdhasdy",1000,2]
--   places sell offer with price 1000 of assets (for now it would be gas, later NAC)
+-   places sell offer with price 1000 of NAT
 
 load_run ..\NA\NASC.avm test 0710 05 True False na_cancel_sale_offer ["asdhasdy",2]
 -   closes sell offer
