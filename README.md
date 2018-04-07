@@ -10,7 +10,9 @@ Neo alias is dapp built on NEO blockchain. The purpose of NA is to make the bloc
     And because of that, I will focus in the future for improving current NA SC (voting, lowering fees - by algorithm simplification, etc.) and building infrastracture (NA server, support for NA in wallets etc.)
 -   I will submit NA in next competitions too. Let's hope in better results, so the NA may come to reality :)
 -   In case you want help with NA funding, please use NEO address:
+
     *Donations: ARSforLjf3753vR6N3c5Dx4XtMCpq53YVS*
+    
     All funds will be used only for NA deployment. The use of funds will be fully transparent and will be announced/listed for now here and later on NA website. In case of some investors wanting to fund deployment of NA ICO smartcontract - it is possible to do it in form of presale, what means the NAT rewards for presale investors would be hardcoded in ICO SC.
 
 # Roadmap
